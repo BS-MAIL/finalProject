@@ -58,8 +58,7 @@ python build_engine.py <content.py> <form_template.hwpx> <out_dir> [차시번호
 1. 확정 Markdown의 내용을 `COMMON`과 `CHASI[1]`~`CHASI[6]`으로 옮긴다.
 2. `COMMON['chasi_table']`에는 TRACES 6차시 전체를, 각 `CHASI[n]['lesson']`에는 해당 차시의 구체적 활동을 넣는다.
 3. 수업안 Markdown에 없는 수치·성취기준·활동·평가 문구를 새로 추가하지 않는다.
-4. 학생 활동지·교사용 예시 PDF·PNG의 파일명과 삽입 위치를 `materials` 또는 생성 기록에 명확히 적는다.
-5. Python 문법을 확인한 뒤 1개 차시를 먼저 생성한다.
+4. 활동지·예시의 파일명·버전·삽입 위치가 생성 요청서에 확정된 뒤 1~6차시 통합 제출용 HWPX를 생성한다.
 
 기존 2차시 `content.py` 구조를 6차시로 확장하는 것이며, 과거 2차시·10차시 자료를 그대로 제출용 내용으로 전용하는 것이 아니다. 현재 최종 제출의 기준은 TRACES 6차시 확정 Markdown이다.
 
@@ -75,7 +74,10 @@ python3 /승인된-생성도구/build_engine.py \
   /별도작업/템플릿-복사본.hwpx \
   /별도작업/output 1
 
-# 3) 1~6차시 통합 제출용 HWPX를 생성한다.
+# 3) 활동지·예시 HTML을 제작하고 PDF·PNG로 변환·검수한다.
+#    학생용/교사용 파일명, 버전, HWPX 삽입 위치를 생성 요청서에 확정한다.
+
+# 4) 확정된 부속자료를 포함할 1~6차시 통합 HWPX를 생성한다.
 python3 /승인된-생성도구/build_engine.py \
   /별도작업/content.py \
   /별도작업/템플릿-복사본.hwpx \
