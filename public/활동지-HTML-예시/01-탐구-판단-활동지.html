@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>탐구와 판단 활동지</title>
+  <link rel="stylesheet" href="assets/paper.min.css">
+  <style>
+    @page { size: A4; margin: 12mm; }
+    :root { --ink: #1d2b34; --accent: #086f83; --pale: #e6f4f4; --line: #91aeb1; }
+    * { box-sizing: border-box; }
+    body { color: var(--ink); font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; font-size: 12pt; line-height: 1.45; }
+    main { max-width: 186mm; margin: 0 auto; }
+    h1, h2, p { margin-top: 0; }
+    h1 { font-size: 21pt; margin-bottom: 3mm; }
+    h2 { font-size: 13pt; margin-bottom: 2mm; }
+    .meta { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; margin: 4mm 0 6mm; }
+    .meta span { border-bottom: 1.5px solid var(--ink); min-height: 8mm; }
+    .tag { display: inline-block; padding: 1mm 3mm; background: var(--pale); border: 1px solid var(--accent); font-weight: 700; }
+    .question { border: 2px solid var(--accent); background: #fbffff; padding: 5mm; margin: 4mm 0; }
+    .question p { margin-bottom: 0; font-size: 14pt; font-weight: 700; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+    .panel { border: 1.2px solid var(--line); padding: 4mm; break-inside: avoid; }
+    .writing { min-height: 30mm; border-bottom: 1px dashed var(--line); background: repeating-linear-gradient(to bottom, transparent 0 8mm, #dce8e8 8.2mm 8.5mm); }
+    .math-space { min-height: 42mm; border: 1px dashed var(--line); padding: 3mm; }
+    table { width: 100%; border-collapse: collapse; margin-top: 3mm; }
+    th, td { border: 1px solid var(--line); padding: 2mm; vertical-align: top; }
+    th { background: var(--pale); }
+    .wide { grid-column: 1 / -1; }
+    .note { font-size: 10.5pt; color: #40545c; }
+    @media print { body { font-size: 12pt; } .screen-only { display: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="tag">[차시·단계] 예: A - Architect</span>
+    <h1>[활동지 제목]</h1>
+    <div class="meta"><span>이름:</span><span>모둠:</span><span>날짜:</span></div>
+
+    <section class="question">
+      <h2>오늘의 판단</h2>
+      <p>[학생이 수학적 근거로 답할 한 문장 질문]</p>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>1. 먼저 살펴볼 자료와 조건</h2>
+        <p class="note">자료의 뜻, 단위, 믿을 수 있는 범위와 빠진 정보를 적습니다.</p>
+        <table>
+          <tr><th>자료·변수</th><th>뜻·단위</th><th>확인할 점 또는 한계</th></tr>
+          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        </table>
+      </section>
+
+      <section class="panel">
+        <h2>2. 내가 세운 비교 기준</h2>
+        <p class="note">무엇을 더 중요하게 볼지, 그 이유를 적습니다.</p>
+        <div class="writing"></div>
+      </section>
+
+      <section class="panel wide">
+        <h2>3. 계산·표·그래프로 근거 만들기</h2>
+        <p class="note">식, 계산 과정, 표, 그래프 중 필요한 방법으로 근거를 남깁니다.</p>
+        <div class="math-space"></div>
+      </section>
+
+      <section class="panel">
+        <h2>4. 후보 비교</h2>
+        <table>
+          <tr><th>후보</th><th>수학적 근거</th><th>내 기준에 맞는 점</th></tr>
+          <tr><td>A</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+          <tr><td>B</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        </table>
+      </section>
+
+      <section class="panel">
+        <h2>5. 지금의 판단</h2>
+        <p class="note">나는 [후보]를 고르거나 판단을 보류한다. 왜냐하면...</p>
+        <div class="writing"></div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>교사용 예시와 관찰 기록</title>
+  <link rel="stylesheet" href="assets/paper.min.css">
+  <style>
+    @page { size: A4; margin: 12mm; }
+    :root { --ink: #263423; --accent: #4b6f39; --pale: #edf5e8; --line: #9eb391; }
+    * { box-sizing: border-box; }
+    body { color: var(--ink); font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; font-size: 11.5pt; line-height: 1.4; }
+    main { max-width: 186mm; margin: 0 auto; }
+    h1, h2, p { margin-top: 0; }
+    h1 { font-size: 20pt; margin-bottom: 3mm; }
+    h2 { font-size: 12.5pt; margin-bottom: 2mm; }
+    .notice { padding: 3mm 4mm; border: 2px solid var(--accent); background: var(--pale); font-weight: 700; margin: 4mm 0; }
+    .meta { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin: 4mm 0 5mm; }
+    .meta span { border-bottom: 1px solid var(--ink); min-height: 7mm; }
+    .grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 5mm; }
+    .panel { border: 1.2px solid var(--line); padding: 4mm; break-inside: avoid; }
+    table { width: 100%; border-collapse: collapse; margin-top: 3mm; }
+    th, td { border: 1px solid var(--line); padding: 2mm; vertical-align: top; }
+    th { background: var(--pale); }
+    .model { min-height: 48mm; border: 1px dashed var(--line); padding: 3mm; white-space: pre-wrap; }
+    .small { font-size: 10pt; }
+    @media print { .screen-only { display: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="notice">교사용 전용: 완성 계산, 예상 오개념, 관찰 기준을 포함합니다. 학생용과 분리해 배포합니다.</div>
+    <h1>[교사용 공통 모델·관찰 기록]</h1>
+    <div class="meta"><span>수업·차시:</span><span>교사:</span><span>학생용 활동지 버전:</span><span>자료·모형 확인일:</span></div>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>1. 공통 모델과 검산</h2>
+        <p class="small">수치, 변수, 단위, 식, 직접 대입 또는 그래프 확인을 적습니다.</p>
+        <div class="model">[교사용 완성 모델과 검산 과정]</div>
+      </section>
+      <section class="panel">
+        <h2>2. 예상 오개념</h2>
+        <table>
+          <tr><th>예상 반응</th><th>확인 질문</th></tr>
+          <tr><td>[예: 단위를 생략함]</td><td>[이 값의 단위는 무엇인가?]</td></tr>
+          <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        </table>
+      </section>
+    </div>
+
+    <section class="panel" style="margin-top:5mm;">
+      <h2>3. 개인 증거와 관찰 기록</h2>
+      <table>
+        <tr><th>학생</th><th>확인할 개인 증거</th><th>관찰·질문 기록</th><th>보충 확인 또는 다음 행동</th></tr>
+        <tr><td>&nbsp;</td><td>[계산 / 선택 이유 / 수정 이유]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      </table>
+    </section>
+
+    <section class="panel" style="margin-top:5mm;">
+      <h2>4. 다음 차시로 넘길 판단</h2>
+      <table>
+        <tr><th>이번 차시의 공통 판단</th><th>다음 차시에 다시 쓸 증거</th><th>수정할 자료·안전 경계</th></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

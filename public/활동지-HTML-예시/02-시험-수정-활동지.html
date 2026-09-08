@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>시험과 수정 활동지</title>
+  <link rel="stylesheet" href="assets/paper.min.css">
+  <style>
+    @page { size: A4; margin: 12mm; }
+    :root { --ink: #34251d; --accent: #a84f22; --pale: #fff0df; --line: #bfa18d; }
+    * { box-sizing: border-box; }
+    body { color: var(--ink); font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; font-size: 12pt; line-height: 1.45; }
+    main { max-width: 186mm; margin: 0 auto; }
+    h1, h2, p { margin-top: 0; }
+    h1 { font-size: 21pt; margin-bottom: 3mm; }
+    h2 { font-size: 13pt; margin-bottom: 2mm; }
+    .meta { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; margin: 4mm 0 6mm; }
+    .meta span { border-bottom: 1.5px solid var(--ink); min-height: 8mm; }
+    .tag { display: inline-block; padding: 1mm 3mm; background: var(--pale); border: 1px solid var(--accent); font-weight: 700; }
+    .promise { padding: 4mm; border: 2px solid var(--accent); margin: 4mm 0; background: #fffdfa; }
+    .flow { display: grid; grid-template-columns: 1fr 26mm 1fr; align-items: stretch; gap: 3mm; margin-top: 5mm; }
+    .step { border: 1.2px solid var(--line); padding: 4mm; min-height: 53mm; }
+    .arrow { align-self: center; text-align: center; font-size: 22pt; font-weight: 700; color: var(--accent); }
+    .writing { min-height: 26mm; border-bottom: 1px dashed var(--line); background: repeating-linear-gradient(to bottom, transparent 0 8mm, #f0ddd2 8.2mm 8.5mm); }
+    table { width: 100%; border-collapse: collapse; margin-top: 3mm; }
+    th, td { border: 1px solid var(--line); padding: 2mm; vertical-align: top; }
+    th { background: var(--pale); }
+    .result { border: 2px solid var(--accent); padding: 4mm; margin-top: 5mm; }
+    .check { display: inline-block; margin-right: 6mm; }
+    @media print { .screen-only { display: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="tag">[차시·단계] 예: E - Execute / S - Study</span>
+    <h1>[시험하고 수정하는 활동지]</h1>
+    <div class="meta"><span>이름:</span><span>모둠:</span><span>날짜:</span></div>
+
+    <section class="promise">
+      <h2>오늘의 약속</h2>
+      <p>우리는 A에서 고른 답을 그대로 반복 계산하지 않습니다. <strong>[A에서 쓰지 않은 새 자료·조건·시험점]</strong>에서 선택이 유지되는지 확인하고, 결과에 따라 판단을 설명합니다.</p>
+    </section>
+
+    <div class="flow">
+      <section class="step">
+        <h2>1. 시험 전 예측</h2>
+        <p class="note">새 조건에서 내 선택은 유지될까, 바뀔까?</p>
+        <div class="writing"></div>
+      </section>
+      <div class="arrow" aria-hidden="true">→</div>
+      <section class="step">
+        <h2>2. 다른 조건에서 시험</h2>
+        <p class="note">새 조건, 계산·관찰 결과, 기준 충족 여부를 적습니다.</p>
+        <table>
+          <tr><th>새 조건</th><th>결과</th><th>판정 기준과 비교</th></tr>
+          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        </table>
+      </section>
+    </div>
+
+    <section class="result">
+      <h2>3. 내 판단을 유지·수정·보류하기</h2>
+      <p>
+        <span class="check">□ 유지한다</span>
+        <span class="check">□ 수정한다</span>
+        <span class="check">□ 자료가 부족해 보류한다</span>
+      </p>
+      <p class="note">내 판단과 이유를 수학적 근거, 시험 결과, 모형의 한계를 연결해 씁니다.</p>
+      <div class="writing"></div>
+    </section>
+
+    <section class="result">
+      <h2>4. 다음에 확인할 것</h2>
+      <p class="note">이 모형이 실제 상황에 적용되기 전에 더 알아야 할 정보 또는 안전한 대체안을 적습니다.</p>
+      <div class="writing"></div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>수학 모델 비교 활동지</title>
+  <link rel="stylesheet" href="assets/paper.min.css">
+  <style>
+    @page { size: A4; margin: 12mm; }
+    :root { --ink: #242338; --accent: #3c4f9a; --pale: #ebeeff; --line: #9ea9d2; }
+    * { box-sizing: border-box; }
+    body { color: var(--ink); font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; font-size: 12pt; line-height: 1.42; }
+    main { max-width: 186mm; margin: 0 auto; }
+    h1, h2, p { margin-top: 0; }
+    h1 { font-size: 21pt; margin-bottom: 3mm; }
+    h2 { font-size: 13pt; margin-bottom: 2mm; }
+    .meta { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; margin: 4mm 0 6mm; }
+    .meta span { border-bottom: 1.5px solid var(--ink); min-height: 8mm; }
+    .tag { display: inline-block; padding: 1mm 3mm; background: var(--pale); border: 1px solid var(--accent); font-weight: 700; }
+    .question { border: 2px solid var(--accent); padding: 4mm; margin: 4mm 0; background: #fbfbff; }
+    .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+    .candidate { border: 2px solid var(--accent); padding: 4mm; min-height: 60mm; }
+    .candidate h2 { display: inline-block; background: var(--pale); padding: 1mm 3mm; }
+    .work { min-height: 34mm; border: 1px dashed var(--line); }
+    table { width: 100%; border-collapse: collapse; margin: 5mm 0; }
+    th, td { border: 1px solid var(--line); padding: 2mm; vertical-align: top; }
+    th { background: var(--pale); }
+    .plan { padding: 4mm; border: 1.2px solid var(--line); }
+    .writing { min-height: 20mm; border-bottom: 1px dashed var(--line); background: repeating-linear-gradient(to bottom, transparent 0 8mm, #dde1f4 8.2mm 8.5mm); }
+    @media print { .screen-only { display: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="tag">[차시·단계] 예: A - Architect / C - Change-plan</span>
+    <h1>[두 해결안을 수학으로 비교하기]</h1>
+    <div class="meta"><span>이름:</span><span>모둠:</span><span>날짜:</span></div>
+
+    <section class="question">
+      <h2>비교할 질문</h2>
+      <p>[두 후보 중 무엇을 고를지, 또는 어떤 조건에서 선택을 바꿀지 묻는 질문]</p>
+    </section>
+
+    <div class="compare">
+      <section class="candidate">
+        <h2>후보 A</h2>
+        <p class="note">식, 표, 그래프, 단위, 계산을 적습니다.</p>
+        <div class="work"></div>
+      </section>
+      <section class="candidate">
+        <h2>후보 B</h2>
+        <p class="note">식, 표, 그래프, 단위, 계산을 적습니다.</p>
+        <div class="work"></div>
+      </section>
+    </div>
+
+    <table>
+      <tr><th>비교 기준</th><th>후보 A</th><th>후보 B</th><th>내가 중요하게 보는 이유</th></tr>
+      <tr><td>[수학적 조건]</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <tr><td>[현실적·안전 조건]</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <tr><td>[한계 또는 불확실성]</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    </table>
+
+    <section class="plan">
+      <h2>다음 시험을 위한 계획</h2>
+      <p class="note">A에서 사용하지 않은 자료·조건·시험점을 정합니다. 같은 계산을 반복하지 않습니다.</p>
+      <table>
+        <tr><th>새 시험 조건</th><th>미리 정한 판정 기준</th><th>결과가 다르면 어떻게 할까?</th></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      </table>
+      <p class="note">현재의 첫 선택과 이유:</p>
+      <div class="writing"></div>
+    </section>
+  </main>
+</body>
+</html>
